@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  height: 100vh;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aside {
+  height: 100vh;
+  width: 300px;
+  background-color: dimgray;
+  color: white;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.aside__img {
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 20px;
+}
+.aside__title {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  padding-left: 30px;
+}
+.aside__title::before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-color: #929292;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.aside__skills-list {
+  list-style-type: circle;
+  line-height: 25px;
+  padding: 0 40px;
+  font-size: 14px;
+}
+.aside__languages-list {
+  line-height: 25px;
+  padding-left: 30px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 30px;
+  width: 680px;
+}
+.main__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 30px;
+  z-index: 1;
+  position: relative;
+}
+.main__title::before {
+  content: "";
+  width: 680px;
+  height: 30px;
+  background-color: #e2e2e2;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -30px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  overflow: hidden;
+}
+.main__personal-information {
+  padding-top: 20px;
+  height: 110px;
+}
+.main__name {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main__position {
+  font-size: 25px;
+  padding-top: 20px;
+}
+.main__location {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.fa-map-marker-alt {
+  padding-right: 10px;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  margin-top: 30px;
+}
+.description__years {
+  width: 110px;
+  padding-right: 10px;
+  color: #4b4b4b;
+  font-style: italic;
+  font-size: 14px;
+}
+.description__paragraf {
+  width: 500px;
+  font-size: 14px;
+}
+.description__paragraf p:first-child {
+  font-size: 18px;
+  padding-bottom: 10px;
+}

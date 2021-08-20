@@ -1,0 +1,153 @@
+@import "reset";
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    height: 100vh;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.aside {
+    height: 100vh;
+    width: 300px;
+    background-color: dimgray;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+
+    &__img{
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+        align-self: center;
+        padding-top: 20px;
+    }
+
+    &__title{
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        padding-left: 30px;
+    }
+
+    &__title::before{
+        content: '';
+        width: 100%;
+        height: 30px;
+        background-color: rgb(146, 146, 146);
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__skills-list{
+        list-style-type: circle;
+        line-height: 25px;
+        padding: 0 40px;
+        font-size: 14px;
+
+        &__skill{
+            
+        }
+    }
+
+    &__languages-list{
+        line-height: 25px;
+        padding-left: 30px;
+    }
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    width: 680px;
+
+    &__title{
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 30px;
+        z-index: 1;
+        position: relative;
+    }
+
+    &__title::before{
+        content: '';
+        width: 680px;
+        height: 30px;
+        background-color: rgb(226, 226, 226);
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: -30px;
+        transform: translate(0, -50%);
+        overflow: hidden;
+    }
+
+    &__personal-information{
+        padding-top: 20px;
+        height: 110px;
+    }
+
+    &__name{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__position{
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    &__location{
+        font-style: italic;
+        padding-top: 10px;
+    }
+}
+
+.fa-map-marker-alt{
+    padding-right: 10px;
+}
+
+.description{
+    display: flex;
+    line-height: 20px;
+    margin-top: 30px;
+
+    &__years{
+        width: 110px;
+        padding-right: 10px;
+        color: rgb(75, 75, 75);
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    &__paragraf{
+        width: 500px;
+        font-size: 14px;
+    }
+
+    &__paragraf p:first-child{
+        font-size: 18px;
+        padding-bottom: 10px;
+        // font-weight: 700;
+    }
+}
