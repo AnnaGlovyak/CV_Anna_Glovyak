@@ -88,6 +88,7 @@ body, html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 20px;
 }
 .aside__img {
   width: 110px;
@@ -111,15 +112,15 @@ body, html {
 }
 .aside__title::before {
   content: "";
-  width: 100%;
+  width: 320px;
   height: 30px;
   background-color: #929292;
   position: absolute;
   z-index: -1;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 .aside__skills-list {
   list-style-type: circle;
@@ -130,6 +131,30 @@ body, html {
 .aside__languages-list {
   line-height: 25px;
   padding-left: 30px;
+}
+
+.projects {
+  padding-left: 30px;
+  font-size: 14px;
+  list-style: circle;
+}
+.projects__item {
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+.projects__link {
+  display: block;
+}
+
+.contacts-list {
+  padding-left: 20px;
+}
+.contacts-list__item {
+  font-size: 14px;
+  line-height: 25px;
+}
+.contacts-list__icon {
+  padding-right: 10px;
 }
 
 .main {
@@ -211,15 +236,4 @@ body, html {
 .description__company {
   font-style: italic;
   padding-bottom: 10px;
-}
-
-.contacts-list {
-  padding-left: 10px;
-}
-.contacts-list__item {
-  font-size: 14px;
-  line-height: 25px;
-}
-.contacts-list__icon {
-  padding-right: 6px;
 }
