@@ -69,23 +69,6 @@ body, html {
     }
 }
 
-.projects {
-    padding-left: 30px;
-    font-size: 14px;
-    list-style: circle;
-   
-
-    &__item {
-        line-height: 25px;
-        padding-bottom: 20px;
-        
-    }
-
-    &__link {
-        display: block;
-    }
-}
-
 .contacts-list {
     padding-left: 20px;
 
@@ -179,5 +162,22 @@ body, html {
     &__company{
         font-style: italic;
         padding-bottom: 10px;
+    }
+}
+
+.projects {
+    padding-left: 30px;
+    font-size: 14px;
+    list-style: circle;
+   
+
+    &__item {
+        line-height: 25px;
+        padding-bottom: 20px;
+        
+    }
+
+    &__link {
+        display: block;
     }
 }
