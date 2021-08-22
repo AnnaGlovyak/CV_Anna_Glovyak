@@ -6,7 +6,7 @@ body, html {
 }
 
 .content {
-    height: 100vh;
+    height: 1300px;
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
@@ -15,7 +15,7 @@ body, html {
 }
 
 .aside {
-    height: 100vh;
+    height: 100%;
     width: 300px;
     background-color: dimgray;
     color: white;
@@ -60,10 +60,6 @@ body, html {
         line-height: 25px;
         padding: 0 40px;
         font-size: 14px;
-
-        &__skill{
-            
-        }
     }
 
     &__languages-list{
@@ -149,5 +145,22 @@ body, html {
         font-size: 18px;
         padding-bottom: 10px;
         // font-weight: 700;
+    }
+
+    &__company{
+        font-style: italic;
+        padding-bottom: 10px;
+    }
+}
+.contacts-list {
+    padding-left: 10px;
+
+    &__item {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    &__icon{
+        padding-right: 6px;
     }
 }
