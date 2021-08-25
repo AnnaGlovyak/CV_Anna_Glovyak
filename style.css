@@ -91,13 +91,13 @@ body, html {
   padding-right: 20px;
 }
 .aside__img {
-  width: 110px;
-  height: 110px;
-  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .aside__title {
   font-size: 16px;
@@ -177,8 +177,8 @@ body, html {
   overflow: hidden;
 }
 .main__personal-information {
-  padding-top: 20px;
-  height: 110px;
+  padding-top: 40px;
+  height: 130px;
 }
 .main__name {
   font-size: 40px;
@@ -192,6 +192,19 @@ body, html {
 .main__location {
   font-style: italic;
   padding-top: 10px;
+}
+
+.skills-list {
+  list-style-type: circle;
+  line-height: 25px;
+  padding: 0 40px;
+  font-size: 14px;
+}
+.skills-list__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
 }
 
 .fa-map-marker-alt {
