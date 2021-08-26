@@ -6,7 +6,7 @@ body, html {
 }
 
 .content {
-    height: 1300px;
+    height: 1500px;
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
@@ -87,6 +87,15 @@ body, html {
     flex-direction: column;
     padding: 0 30px;
     width: 680px;
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__description--left{
+        width: 400px;
+    }
 
     &__title{
         font-size: 18px;
@@ -174,6 +183,8 @@ body, html {
     &__company{
         font-style: italic;
         padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
