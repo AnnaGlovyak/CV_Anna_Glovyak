@@ -191,13 +191,15 @@ body, html {
 .projects {
     padding-left: 30px;
     font-size: 14px;
-    list-style: circle;
    
+
+    &__title{
+        border-bottom: 1px solid white;
+    }
 
     &__item {
         line-height: 25px;
         padding-bottom: 20px;
-        
     }
 
     &__link {

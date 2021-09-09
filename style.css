@@ -258,7 +258,9 @@ body, html {
 .projects {
   padding-left: 30px;
   font-size: 14px;
-  list-style: circle;
+}
+.projects__title {
+  border-bottom: 1px solid white;
 }
 .projects__item {
   line-height: 25px;
