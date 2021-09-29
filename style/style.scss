@@ -16,7 +16,6 @@ body, html {
 
 .aside {
     height: 100%;
-    width: 300px;
     background-color: dimgray;
     color: white;
     font-weight: 300;
@@ -46,7 +45,7 @@ body, html {
 
     &__title::before{
         content: '';
-        width: 320px;
+        width: 300px;
         height: 30px;
         background-color: rgb(146, 146, 146);
         position: absolute;
