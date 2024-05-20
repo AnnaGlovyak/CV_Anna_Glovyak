@@ -2,19 +2,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +110,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -57,13 +138,14 @@ a {
   text-decoration: none;
 }
 
-body, html {
-  height: 100%;
+body,
+html {
+  height: auto;
   font-family: "Roboto", sans-serif;
 }
 
 .content {
-  height: 1700px;
+  height: 100%;
   max-width: 980px;
   width: 100%;
   margin: 0 auto;
@@ -71,12 +153,12 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .aside {
-  height: 120%;
+  height: auto;
   background-color: dimgray;
   color: white;
   font-weight: 300;
@@ -85,17 +167,17 @@ body, html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-right: 20px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-right: 18px;
 }
 .aside__img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   margin-top: 20px;
 }
 .aside__title {
@@ -111,7 +193,7 @@ body, html {
 }
 .aside__title::before {
   content: "";
-  width: 300px;
+  width: calc(100% + 18px);
   height: 30px;
   background-color: #929292;
   position: absolute;
@@ -119,7 +201,7 @@ body, html {
   top: 50%;
   left: 0;
   -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .aside__skills-list {
   list-style-type: circle;
@@ -149,9 +231,9 @@ body, html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 30px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 32px 32px;
   width: 680px;
 }
 .main__content {
@@ -159,8 +241,8 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .main__description--left {
   width: 400px;
@@ -173,21 +255,8 @@ body, html {
   z-index: 1;
   position: relative;
 }
-.main__title::before {
-  content: "";
-  width: 680px;
-  height: 30px;
-  background-color: #e2e2e2;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: -30px;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  overflow: hidden;
-}
 .main__personal-information {
-  padding-top: 40px;
+  padding-top: 16px;
   height: 130px;
 }
 .main__name {
@@ -251,8 +320,8 @@ body, html {
   display: flex;
   flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .projects {
